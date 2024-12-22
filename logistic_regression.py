@@ -79,12 +79,12 @@ from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-cm=confusion_matrix(y_test, y_pred_test_log, labels=log_model.classes_)#xatolik matrisini hisoblash
+cm=confusion_matrix(y_test, y_pred_test_log, labels=['Professor', 'Dotsent', 'O‘qituvchi'])#xatolik matrisini hisoblash
 print('Confusion matrix:')
 print(cm)
 #matrisni vizualizatsiya qilish
 plt.figure(figsize=(8, 6))
-sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=log_model.classes_, yticklabels=log_model.classes_)
+sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=['Professor', 'Dotsent', 'O‘qituvchi'], yticklabels=['Professor', 'Dotsent', 'O‘qituvchi'])
 plt.title('Confusion matrix for test data (Logistic regression)')
 plt.xlabel('Predicted class')
 plt.ylabel('Actual class')
