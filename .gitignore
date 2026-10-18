@@ -29,12 +29,7 @@ htmlcov/
 .ipynb_checkpoints/
 
 # IDE and editor state
-.idea/workspace.xml
-.idea/usage.statistics.xml
-.idea/shelf/
-.idea/httpRequests/
-.idea/dataSources/
-.idea/dataSources.local.xml
+.idea
 .vscode/
 
 # Local environment and OS files
